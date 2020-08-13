@@ -17,7 +17,7 @@ public class DemoAPITest {
 	
 	public static void main(String[] args) throws IOException {
 		
-		 ArrayList<String> alist = getDataFromExcelFile("Login");
+		 ArrayList<String> alist = getDataFromExcelFile("Register");
 		 
 		 for(String a : alist) {
 			 
@@ -30,8 +30,9 @@ public class DemoAPITest {
 		
 		ArrayList<String> alist = new ArrayList<String>();
 		
-		FileInputStream fis = new FileInputStream("C:\\Users\\smanchegowda\\Desktop\\ExcelTestData.xlsx");
-	
+		//FileInputStream fis = new FileInputStream("C:\\Users\\smanchegowda\\Desktop\\ExcelTestData.xlsx");
+		
+		FileInputStream fis = new FileInputStream("ExcelTestData.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		int sheetcount = workbook.getNumberOfSheets();
 		
